@@ -8,14 +8,19 @@ WORKDIR /app
 # Install pnpm
 RUN corepack enable && corepack prepare pnpm@latest --activate
 
-# Copy package files and install dependencies
-COPY package*.json pnpm-lock.yaml* ./
-RUN pnpm install --frozen-lockfile
+# Copy package files
+COPY package.json ./
 
-# Copy project files (including .env.prod and .env.dev)
+# Install dependencies
+RUN pnpm install
+
+# Run nuxt prepare (important for Nuxt 4)
+RUN pnpm nuxt prepare
+
+# Copy project files
 COPY . .
 
-# Set ARG for environment selection with default value
+# Set ARG for environment selection
 ARG ENVIRONMENT=production
 ENV NODE_ENV=$ENVIRONMENT
 
@@ -30,7 +35,6 @@ LABEL version=$VERSION
 RUN echo "Building for environment: $NODE_ENV"
 
 # Validate environment and copy appropriate .env file
-# Then append version information with proper newlines
 RUN case "$NODE_ENV" in \
       "production"|"prod") \
         if [ ! -f .env.prod ]; then \

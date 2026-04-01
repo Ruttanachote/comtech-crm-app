@@ -1,6 +1,6 @@
 <script setup lang="ts">
   import { useSystemStore } from '../../stores/useSystemStore';
-  import MenuContent from '~/layout/MenuContent.vue';
+  import MenuContent from './MenuContent.vue';
   import { useWindowSize } from '../composables/useWindowSize';
   const systemStore = useSystemStore();
   const isMenuOpen = computed(() => systemStore.isMenuOpen);

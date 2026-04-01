@@ -26,9 +26,6 @@ pnpm-debug.log*
 *.swo
 
 # Local env files
-.env
-.env.*
-!.env.example
 
 # CLUADE.md
 CLUADE.md

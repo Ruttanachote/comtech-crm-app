@@ -97,6 +97,21 @@
     "cancel": "ยกเลิก",
     "delete": "ลบ",
     "save": "บันทึก",
+    "search": "ค้นหา",
+    "filter": "ตัวกรอง",
+    "clear": "ล้าง",
+    "export": "ส่งออก",
+    "create": "สร้าง",
+    "edit": "แก้ไข",
+    "view": "ดู",
+    "close": "ปิด",
+    "confirm": "ยืนยัน",
+    "loading": "กำลังโหลด...",
+    "noData": "ไม่มีข้อมูล",
+    "viewAll": "ดูทั้งหมด",
+    "showing": "แสดง",
+    "of": "จาก",
+    "items": "รายการ",
     "this_week": "สัปดาห์นี้",
     "all_types": "ทุกประเภท",
     "visits": "การเข้าเยี่ยม",
@@ -113,9 +128,20 @@
     "duration": "ระยะเวลา",
     "outcome": "ผลลัพธ์",
     "actions": "การกระทำ",
-    "filter": "ตัวกรอง",
     "logout_title": "ยืนยันการออกจากระบบ",
-    "logout_desc": "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?"
+    "logout_desc": "คุณแน่ใจหรือไม่ว่าต้องการออกจากระบบ?",
+    "all": "ทั้งหมด",
+    "pending": "รอดำเนินการ",
+    "approved": "อนุมัติ",
+    "rejected": "ปฏิเสธ",
+    "urgent": "ด่วน",
+    "medium": "ปานกลาง",
+    "low": "ต่ำ",
+    "value": "มูลค่า",
+    "sender": "ผู้ส่ง",
+    "waitingAt": "รออนุมัติที่",
+    "daysAgo": "วันที่ผ่านมา",
+    "days": "วัน"
   },
   "activities": {
     "title": "กิจกรรมและการเข้าเยี่ยม",
@@ -170,6 +196,34 @@
       "planned": "วางแผนแล้ว",
       "completed": "เสร็จสิ้น"
     }
+  },
+  "approval": {
+    "title": "เอกสารอนุมัติทั้งหมด",
+    "subtitle": "จัดการและติดตามการอนุมัติเอกสาร",
+    "approve": "อนุมัติ",
+    "reject": "ปฏิเสธ",
+    "approved": "อนุมัติแล้ว",
+    "rejected": "ปฏิเสธแล้ว",
+    "pending": "รอดำเนินการ"
+  },
+  "stats": {
+    "issueCount": "ISSUE Count",
+    "winCount": "WIN Count",
+    "issueValue": "ISSUE Value",
+    "winValue": "WIN Value",
+    "actualRevenue": "Actual Revenue",
+    "numberOfProject": "Number of Project",
+    "revenue": "REVENUE",
+    "lastYear": "Last Year"
+  },
+  "pipeline": {
+    "title": "Sales Pipeline Status",
+    "leads": "Leads",
+    "qualified": "Qualified",
+    "proposal": "Proposal",
+    "negotiation": "Negotiation",
+    "closedWon": "Closed Won",
+    "closedLost": "Closed Lost"
   },
   "permissions": {
     "no_permission": "คุณไม่มีสิทธิ์ในการดำเนินการนี้"

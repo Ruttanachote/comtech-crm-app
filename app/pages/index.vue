@@ -3,7 +3,10 @@
 
   definePageMeta({
     layout: 'default',
+    title: 'Dashboard',
   });
 </script>
 
-<template>HELLO WORLD</template>
+<template>
+  <DashboardScreen />
+</template>
